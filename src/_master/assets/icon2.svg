@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <g data-name="Group 5983">
+        <path data-name="Rectangle 1825" style="fill:#fff" d="M0 0h30v30H0z"/>
+        <g data-name="Group 585" transform="translate(-17.331 -294.685)">
+            <ellipse cx="9.856" cy="9.918" rx="9.856" ry="9.918" transform="translate(20.331 297.685)" style="fill:#8f9da0"/>
+            <path d="M4.094 5.679a1.848 1.848 0 0 1-1.158-.528L.433 2.226A1.336 1.336 0 0 1 .335.357a1.2 1.2 0 0 1 1.7 0l3.151 2.518a1.657 1.657 0 0 1 .357 1.759 1.64 1.64 0 0 1-1.45 1.045z" transform="translate(37.978 315.311)" style="fill:#a9b3b5"/>
+            <path data-name="Intersection 2" d="M-9673.707-11453.081a9.98 9.98 0 0 1 .589-3.388 9.485 9.485 0 0 1 7.618-3.824 9.5 9.5 0 0 1 9.5 9.5 9.458 9.458 0 0 1-1.752 5.5 9.773 9.773 0 0 1-6.1 2.127 9.886 9.886 0 0 1-9.855-9.915z" transform="translate(9694.039 11760.684)" style="fill:#c3cdce"/>
+        </g>
+    </g>
+</svg>

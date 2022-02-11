@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.shadowImageOverlay {
+  width: 99px;
+  height: 70px;
+  background-image: linear-gradient(
+    268deg,
+    #fff 58%,
+    rgba(241, 241, 241, 0) 19%
+  );
+  margin-top: -23px;
+  margin-right: -10px;
+  opacity: 58%;
+}
+
+.custom-shadow-inner {
+  box-shadow: 0 2px 0 0 #009d79, inset 0 2px 0 0 #006c53;
+}
+
+img {
+  object-fit: center;
+  object-position: center;
+}
+
+.btn-loader {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #3498db;
+  width: 14px;
+  height: 14px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
