@@ -1,13 +1,11 @@
 function CompanyCard({ item }: any) {
-  const imgLength = item?.meta?.banners?.length;
-
   return (
     <>
       <div className="text-gray-0 m-2 relative drop-shadow-md hover:drop-shadow-xl cursor-default transition-all duration-300 p-2 bg-white-0 col-span-1 rounded-[8px] h-[300px]">
         {/* Images Section */}
-        <div className={`grid grid-cols-${imgLength}`}>
-          {item?.meta?.banners?.map((img: any) => (
-            <div className="col-span-1 px-[2px] h-[90px]">
+        <div className={`grid grid-cols-2`}>
+          {item?.meta?.banners?.slice(0, 2)?.map((img: any, index: number) => (
+            <div className="col-span-1 px-[2px] h-[90px]" key={index}>
               <img
                 src={img?.url}
                 alt={img?.name}
