@@ -1,20 +1,6 @@
 
 ## <p  align="center">👚👚 Dhakai Dashboard 👚👚</p>
 
-  
-
-1. Typescript
-
-  
-
-2. Reactjs
-
-  
-
-3. Tailwind CSS
-
-  
-
 ### Installation
 
   
