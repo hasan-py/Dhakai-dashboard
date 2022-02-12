@@ -44,7 +44,7 @@ function Signin() {
       <div className="h-screen flex justify-center items-center w-full bg-gradient-to-r  from-green-200 to-pink-200">
         <form
           onSubmit={(e) => loginHandler(e)}
-          className="bg-white-0 drop-shadow-xl rounded p-8 w-1/3 text-gray-90 z-50"
+          className="bg-white-0 drop-shadow-xl rounded p-8 w-11/12 md:w-1/3 text-gray-90 z-50"
         >
           <h1 className="text-2xl font-bold mb-4 flex items-center justify-between">
             Sign in <img alt="logo" className="w-6 h-6 ml-4" src={Logo} />

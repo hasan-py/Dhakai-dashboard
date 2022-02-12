@@ -38,10 +38,10 @@ export const SingleTab = ({
 const Tabs = () => {
   return (
     <div className="relative grid grid-cols-12 bg-white-0 drop-shadow-sm h-[70px]">
-      <div className="no-scrollbar col-span-12 ml-8 mr-16 overflow-x-auto  flex items-center space-x-3">
+      <div className="no-scrollbar col-span-12 ml-4 md:ml-8 mr-16 overflow-x-auto flex items-center space-x-3">
         {tabArr?.map((item, index) => (
           <Fragment key={index}>
-            <SingleTab name={item} isActive={index === 1} />
+            <SingleTab name={item} isActive={index === 0} />
           </Fragment>
         ))}
       </div>

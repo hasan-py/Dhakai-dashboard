@@ -1,18 +1,21 @@
 import axios from "axios";
 
 export const getManufacturersApi = async (
-  setter: Function,
+  skip?: number,
+  limit?: number,
   setLoading?: Function
 ) => {
   setLoading && setLoading(true);
   try {
-    const res = await axios.get(`/api/v2/manufacturers`);
+    const res = await axios.get(
+      `/api/v2/manufacturers?skip=${skip}&limit=${limit}`
+    );
     if (res.status === 200 && res?.data) {
-      setter(res?.data?.result?.manufacturers || []);
+      setLoading && setLoading(false);
+      return res?.data?.result;
     }
-    setLoading && setLoading(false);
   } catch (error) {
-    setter(null);
     setLoading && setLoading(false);
+    return null;
   }
 };

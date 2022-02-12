@@ -41,14 +41,14 @@ export default function Navber() {
             Activity
           </button>
         </div>
-        <div className="bg-white-0 w-2/5 flex items-center rounded-full px-4">
+        <div className="hidden md:flex bg-white-0 w-2/5 md:items-center rounded-full px-4">
           <img className="mr-2" src={Search} alt="search" />
           <input
             className="placeholder-[#9797a0] w-full focus:outline-none text-[#9797a0]"
             placeholder="Search by name, group, type and others"
           />
         </div>
-        <div className="flex items-center">
+        <div className="hidden md:flex md:items-center">
           <NavberIcon notification={2} img={Message} />
           <NavberIcon notification={6} img={Notification} />
           <img

@@ -30,18 +30,23 @@ function CompanyCard({ item }: any) {
             {item?.meta?.companyName || ""}
           </div>
           {/* Qty */}
-          <div className="text-[14px]">
+          <div>
             <div className="leading-loose flex items-center">
-              <span className="text-gray-10">
-                {item?.addresses[0]?.city}, {item?.addresses[0]?.country}
-              </span>
-              <span className="bg-[#9797a0] w-[3px] h-[3px] mx-2 rounded-full"></span>
-              <span className="text-green-900">
+              {item?.addresses?.length > 0 ? (
+                <>
+                  <span className="text-sm md:text-[14px] text-gray-10">
+                    {item?.addresses[0]?.city}, {item?.addresses[0]?.country}
+                  </span>
+                  <span className="bg-[#9797a0] w-[3px] h-[3px] mx-2 rounded-full"></span>
+                </>
+              ) : null}
+
+              <span className="text-sm md:text-[14px] text-green-900">
                 Min Qty: {item?.minOrderQty}
               </span>
             </div>
             {/* Categories */}
-            <div className="truncate text-gray-10">
+            <div className="text-sm md:text-[14px] truncate text-gray-10">
               {item?.productGroups?.map((productGroup: any, index: number) => (
                 <>
                   {productGroup?.name}
